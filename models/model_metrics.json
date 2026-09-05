@@ -1,0 +1,172 @@
+{
+  "model_type": "RandomForestClassifier",
+  "benchmark_results": {
+    "Random Forest": {
+      "cv_accuracy_mean": 0.8170171364007282,
+      "cv_accuracy_std": 0.024505486196877233,
+      "cv_roc_auc_mean": 0.8731524174379472,
+      "cv_roc_auc_std": 0.02424967862905954
+    },
+    "Gradient Boosting": {
+      "cv_accuracy_mean": 0.8305128366078713,
+      "cv_accuracy_std": 0.013177203853690258,
+      "cv_roc_auc_mean": 0.8795239710272911,
+      "cv_roc_auc_std": 0.01713970949510292
+    },
+    "Logistic Regression": {
+      "cv_accuracy_mean": 0.8260372857949909,
+      "cv_accuracy_std": 0.014655061447001443,
+      "cv_roc_auc_mean": 0.8714037682012645,
+      "cv_roc_auc_std": 0.017648546271180805
+    },
+    "Support Vector Machine": {
+      "cv_accuracy_mean": 0.8293892411022534,
+      "cv_accuracy_std": 0.011776442205273468,
+      "cv_roc_auc_mean": 0.8602960782891682,
+      "cv_roc_auc_std": 0.017370147051336805
+    },
+    "K-Nearest Neighbors": {
+      "cv_accuracy_mean": 0.8114556525014123,
+      "cv_accuracy_std": 0.01823604501601395,
+      "cv_roc_auc_mean": 0.8610766253776413,
+      "cv_roc_auc_std": 0.02011850753394535
+    },
+    "Decision Tree": {
+      "cv_accuracy_mean": 0.8293955181721172,
+      "cv_accuracy_std": 0.018406852097734412,
+      "cv_roc_auc_mean": 0.8544927447354184,
+      "cv_roc_auc_std": 0.021696286088942165
+    }
+  },
+  "tuning_info": {
+    "best_params": {
+      "classifier__max_depth": 6,
+      "classifier__min_samples_leaf": 2,
+      "classifier__min_samples_split": 5,
+      "classifier__n_estimators": 150
+    },
+    "best_cv_accuracy": 0.8417299604544597
+  },
+  "metrics": {
+    "accuracy": 0.8597081930415263,
+    "precision": 0.8604651162790697,
+    "recall": 0.7573099415204678,
+    "f1": 0.8055987558320373,
+    "confusion_matrix": [
+      [
+        507,
+        42
+      ],
+      [
+        83,
+        259
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8593220338983051,
+        "recall": 0.9234972677595629,
+        "f1-score": 0.8902546093064091,
+        "support": 549.0
+      },
+      "1": {
+        "precision": 0.8604651162790697,
+        "recall": 0.7573099415204678,
+        "f1-score": 0.8055987558320373,
+        "support": 342.0
+      },
+      "accuracy": 0.8597081930415263,
+      "macro avg": {
+        "precision": 0.8598935750886874,
+        "recall": 0.8404036046400154,
+        "f1-score": 0.8479266825692232,
+        "support": 891.0
+      },
+      "weighted avg": {
+        "precision": 0.859760792791932,
+        "recall": 0.8597081930415263,
+        "f1-score": 0.8577604433263472,
+        "support": 891.0
+      }
+    },
+    "roc_auc": 0.9273852512276441
+  },
+  "feature_names": [
+    "Pclass",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize",
+    "IsAlone",
+    "FarePerPerson",
+    "Sex_female",
+    "Sex_male",
+    "Embarked_C",
+    "Embarked_Q",
+    "Embarked_S",
+    "Title_Master",
+    "Title_Miss",
+    "Title_Mr",
+    "Title_Mrs",
+    "Title_Officer",
+    "Title_Royalty",
+    "Deck_A",
+    "Deck_B",
+    "Deck_C",
+    "Deck_D",
+    "Deck_E",
+    "Deck_F",
+    "Deck_G",
+    "Deck_T",
+    "Deck_Unknown",
+    "AgeGroup_Child",
+    "AgeGroup_MiddleAged",
+    "AgeGroup_Senior",
+    "AgeGroup_Teen",
+    "AgeGroup_YoungAdult",
+    "FareBin_High",
+    "FareBin_Low",
+    "FareBin_MidHigh",
+    "FareBin_MidLow"
+  ],
+  "feature_importances": [
+    0.06795106143511205,
+    0.048672283814121545,
+    0.024225106782488407,
+    0.010594501525902997,
+    0.07378950980071819,
+    0.04407271417183671,
+    0.007235254594998304,
+    0.08402010324422922,
+    0.11823841047791163,
+    0.13330937967569748,
+    0.006759749666824768,
+    0.003821783352148691,
+    0.008058388359911468,
+    0.00912681576484797,
+    0.05702755583086664,
+    0.15171166884884396,
+    0.040782109233858894,
+    0.003956928015175997,
+    0.00019423782167771493,
+    0.0007526119654054349,
+    0.0022900810678212406,
+    0.0025328577541763055,
+    0.0022659623456115483,
+    0.005573128532037502,
+    0.0003722511807274041,
+    0.0004600707502015676,
+    0.0,
+    0.032115595269978536,
+    0.011848256725534153,
+    0.004267674261241759,
+    0.00215922725622101,
+    0.0033101579568807567,
+    0.0059360092760021846,
+    0.01583995854236399,
+    0.006726104314682611,
+    0.005943566562719461,
+    0.004058923821222051
+  ]
+}
