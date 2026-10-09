@@ -15,6 +15,14 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 
+# Ensure the repository root is on Python's import path.
+# Expected layout: project_root/app/app.py and project_root/src/*.py
+import sys
+
+_APP_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(_APP_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_APP_PROJECT_ROOT))
+
 from src.data_loader import PROJECT_ROOT, load_raw_data, load_processed_data
 from src.predict import TitanicPredictor
 from src.evaluate import plot_confusion_matrix, plot_roc_curve, plot_feature_importance
